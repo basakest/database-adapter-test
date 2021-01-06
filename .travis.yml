@@ -3,8 +3,8 @@ sudo: false
 
 php:
   - 7.1
-  - 7.3
   - 7.2
+  - 7.3
 
 services:
   - mysql
@@ -22,6 +22,7 @@ script:
  - vendor/bin/phpunit --version
  - mkdir -p build/logs
  - vendor/bin/phpunit
+ - touch build/logs/clover.xml
 
 after_script:
  - travis_retry vendor/bin/php-coveralls -v
