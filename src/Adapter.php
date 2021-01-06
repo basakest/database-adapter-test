@@ -55,7 +55,6 @@ class Adapter implements AdapterContract, FilteredAdapter
      */
     public function loadFilteredPolicy(Model $model, $filter): void
     {
-        /*
         // if $filter is empty, load all policies
         if (is_null($filter)) {
             $this->loadPolicy($model);
@@ -93,7 +92,6 @@ class Adapter implements AdapterContract, FilteredAdapter
         }
         
         $this->filtered = true;
-        */
     }
 
     public static function newAdapter(array $config)
