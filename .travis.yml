@@ -1,10 +1,10 @@
 language: php
-sudo: true
+sudo: false
 
 php:
   - 7.1
+  - 7.3
   - 7.2
-  - 7.4
 
 services:
   - mysql
